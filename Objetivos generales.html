@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Proyecto de vida</title>
+        <style>
+            
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(135deg, #3498db, #8e44ad);
+                color: #2c3e50;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+
+            .container {
+                width: 90%;
+                max-width: 900px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #ffffff;
+                border-radius: 15px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                animation: fadeIn 1s ease;
+            }
+
+            @keyframes fadeIn {
+                from { opacity: 0; transform: scale(0.95); }
+                to { opacity: 1; transform: scale(1); }
+            }
+
+            header {
+                margin-bottom: 30px;
+            }
+
+            header h1 {
+                font-size: 2.8em;
+                color: #8e44ad;
+                margin-bottom: 0;
+                background: linear-gradient(to right, #f39c12, #d35400);
+                -webkit-background-clip: text;
+                color: transparent;
+                animation: colorShift 3s infinite;
+            }
+
+            @keyframes colorShift {
+                0% { color: #f39c12; }
+                50% { color: #d35400; }
+                100% { color: #f39c12; }
+            }
+
+            .section-title {
+                color: #3498db;
+                font-size: 1.8em;
+                margin-top: 20px;
+                border-bottom: 2px solid #3498db;
+                display: inline-block;
+                padding-bottom: 5px;
+            }
+
+            .section-content p {
+                font-size: 1.1em;
+                color: #34495e;
+                line-height: 1.8;
+                text-align: left;
+                margin: 0 auto 20px;
+                max-width: 90%;
+                padding: 15px;
+                border-radius: 10px;
+                background-color: #ecf0f1;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .foda-section {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin-top: 30px;
+            }
+
+            aside {
+                flex: 1 1 45%;
+                background-color: #f4f6f7;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+
+            aside:hover {
+                transform: scale(1.05);
+                background-color: #ecf0f1;
+            }
+
+            aside h3 {
+                font-size: 1.5em;
+                color: #8e44ad;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            aside ul {
+                list-style: none;
+                padding: 0;
+                margin: 15px 0;
+                text-align: left;
+            }
+
+            aside ul li {
+                margin-bottom: 10px;
+                padding: 8px;
+                background-color: #ffffff;
+                border-left: 5px solid #3498db;
+                font-size: 1.1em;
+                border-radius: 8px;
+                transition: background-color 0.3s ease;
+            }
+
+            aside ul li:hover {
+                background-color: #d6eaf8;
+            }
+
+            
+            .icon {
+                font-size: 1.2em;
+                color: #3498db;
+            }
+
+            
+            .thank-you {
+                font-size: 1.4em;
+                color: #f39c12;
+                margin-top: 20px;
+                padding: 15px;
+                border-top: 2px solid #f39c12;
+            }
+
+           
+            @media (max-width: 768px) {
+                .foda-section {
+                    flex-direction: column;
+                }
+                aside {
+                    flex: 1 1 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Proyecto de Vida de Adrean santizo</h1>
+            </header>
+
+            <section>
+                <h2 class="section-title">Objetivos Generales</h2>
+                <div class="section-content">
+                    <p>Mis principales objetivos son conseguir empleo para poder ganar dinero y ayudar a mi familia económicamente. Después, formar un hogar con una linda familia.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Metas a Corto Plazo</h2>
+                <div class="section-content">
+                    <p>Mis metas cercanas incluyen encontrar actividades para ocupar mi tiempo y distraerme, y terminar este año académico para pasar a mi último año de carrera.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Metas a Mediano Plazo</h2>
+                <div class="section-content">
+                    <p>Mi meta a mediano plazo es conseguir un cambio físico y mental positivo y graduarme el próximo año como bachiller en computación.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Metas a Largo Plazo</h2>
+                <div class="section-content">
+                    <p>Mi mayor meta a largo plazo es independizarme económicamente y ayudar a mis hermanos en lo que necesiten. Eventualmente, formar un hogar estable.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">FODA</h2>
+                <div class="foda-section">
+                    <aside>
+                        <h3><span class="icon">💪</span> Fortalezas</h3>
+                        <ul>
+                            <li><a href="https://concepto.de/responsabilidad/"> Responsabilidad</li>
+                                <li><a href="https://concepto.de/paciencia-2/">Paciencia</li>
+                                    <li><a href="https://concepto.de/fuerza/">Fuerza</li>
+                                        <li><a href="https://www.personio.es/glosario/trabajo-en-equipo/"> Trabajo en equipo</li>
+                                        </a>
+                        </ul>
+                    </aside>
+                    <aside>
+                        <h3><span class="icon">🌟</span> Oportunidades</h3>
+                        <ul>
+                            <li><a href="https://www.ninjaexcel.com/capacitacion/desarrollo-de-habilidades/">Desarrollo de habilidades</li>
+                                <li><a href="https://concepto.de/pasatiempo/">Conseguir nuevos pasatiempos</li>
+                                    <li><a href="https://concepto.de/trabajo/">Trabajar</li>
+                                        <li><a href="https://concepto.de/familia/">Formar una familia</li>
+                                        </a>
+                        </ul>
+                    </aside>
+                    <aside>
+                        <h3><span class="icon">⚠️</span> Debilidades</h3>
+                        <ul>
+                            <li><a href="https://www.who.int/es/news-room/questions-and-answers/item/stress?gad_source=1&gclid=Cj0KCQjwpvK4BhDUARIsADHt9sSHwAcf50u4xarr033Zq3zW7WzCl7LYWjQGz8VR1Et12E3a0X8GCjEaAtXQEALw_wcB">Estrés</li>
+                                <li><a href="https://concepto.de/habilidad-2/">Falta de habilidades</li>
+                                    <li><a href="https://visionyvida.org/que-es-la-baja-vision/">Falta de visión</li>
+                                        <li><a href="https://www.hola.com/estar-bien/20230127225334/personalidad-sentimental-psicologia/">Sentimental</li>
+                                        </a>
+                        </ul>
+                    </aside>
+                    <aside>
+                        <h3><span class="icon">🚨</span> Amenazas</h3>
+                        <ul>
+                            <li><a href="https://www.ultimahora.es/noticias/economico/2022/09/02/1784595/inestabilidad-economica.html">Inestabilidad economica</li>
+                                <li><a href="https://www.infermeravirtual.com/esp/problemas_de_salud">Problemas de salud</li>
+                                    <li><a href="https://www.terapify.com/blog/problemas-de-motivacion-sintomas-causas-y-tratamiento/#:~:text=qu%C3%A9%20puedo%20hacer%3F-,%C2%BFQu%C3%A9%20es%20la%20falta%20de%20motivaci%C3%B3n%3F,desinter%C3%A9s%20por%20realizar%20actividades%20diarias.">Falta de motivación</li>
+                                        <li><a href="https://dobetter.esade.edu/es/la-obsolescencia-tecnologica-un-breve-resumen#:~:text=En%20l%C3%ADneas%20generales%2C%20la%20obsolescencia,disfuncional%20(Mellal%2C%202020).">Desactualizacion tecnológica</li>
+                                        </a>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+
+            <div class="thank-you">
+                ¡Gracias por tu atención!
+            </div>
+        </div>
+    </body>
+    </html>
